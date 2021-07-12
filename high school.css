@@ -1,0 +1,256 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:rgba(38, 36, 34, 0.65);
+   
+}
+.main-area{
+    height: 600px;
+    width: 800px;
+    background: #fff;
+    margin: auto;
+   
+}
+        /*main menu*/
+
+.main-area ul{
+margin: 0;
+padding: 0;
+background: rgba(1, 41, 37, 0.842);
+
+list-style: none;
+}
+.main-area ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main-area ul li{
+    float: left;
+    position: relative;
+}
+.main-area ul li a{
+    text-decoration: none;
+    padding:30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: block;
+    font-size:25px;
+    color: #fff;
+    transition: 1s;
+}
+.main-area ul li a:hover{
+    background: rgba(30, 235, 218, 0.94);
+   color: rgba(26, 24, 23, 0.65);
+    
+}
+        /* Drop dawon menu */
+
+.main-area ul li ul li{
+    float: none;
+    
+}
+.main-area ul li ul li a{
+    padding: 12px;
+}
+.main-area ul li ul{
+    position: absolute;
+    top: 100%;
+    left:40%;
+    
+    display: none;
+    
+
+}
+.main-area ul li:hover ul{
+    display: block;
+    transition: 1s;
+}
+        
+
+.content{
+    height: 543px;
+    width: 800px;
+    background:#fff;
+}
+.content h2{
+    color: #00B5E6;
+   text-align: center;
+    
+    margin: 5px 0px;
+}
+.content hr{
+    
+    border-color: teal;
+}
+
+.content img{
+    float: right;
+    margin-right: 10px;
+    
+}
+.content p{
+    float: left;
+    width: 520px;
+    margin-left: 20px;
+    margin-top: 0;
+    
+}
+
+
+        /* footer area */
+        
+.footer{
+    background:  rgba(1, 41, 37, 0.842);
+}
+.footer p{
+    
+    margin-top: 0;
+    padding: 10px 10px;
+    color:#fff;
+    font-size: 15px;
+    text-align: center;
+}
+
+        /* responsive area */
+
+@media all and (max-width:450px){
+    .content img{
+        
+       float: left;
+       margin-left: 100px;
+       height: 230px;
+       width: 230px;
+    }
+    .content p{
+        
+       width: 400px;
+       margin-left:18px;
+       
+       margin-top: 5px;
+       float: left
+      
+    }
+    
+    .content{
+        height: 900px;
+        
+            width: 450px;
+            
+        
+       
+    }
+    
+    .main-area ul li a{
+        
+        padding:25px;
+        
+        font-size:20px;
+        
+    }
+    .main-area{
+        height: 950px;
+        width: 450px;
+    }
+    
+}
+@media all and (max-width:438px){
+    .main-area{
+        height: 950px;
+        width: 438px; ;
+    }
+    .content {
+        height: 893px;
+        width: 450px;
+        background: #fff;
+    }
+    
+    .content p{
+        font-size: 15px;
+        width: 350px;
+    }
+}
+@media all and (max-width:380px){
+    .main-area ul li a{
+        
+        padding:20px;
+        
+        font-size:20px;
+        
+    }
+
+}
+@media all and (max-width:360px){
+    .content img{
+       
+        margin-left: 80px;
+        
+     }
+     .content p{
+        font-size: 14px;
+        width: 300px;
+    }
+    .content h2{
+        font-size: 20px;
+        margin-right: 60px;
+    }
+    .main-area ul li a{
+        
+        padding:20px;
+        
+        font-size:18px;
+        
+    }
+    .main-area{
+        height: 950px;
+        width: 400px; ;
+    }
+}
+@media all and (max-width:330px){
+
+    
+    .main-area ul li{
+        float: none;
+        margin-left: 50px;
+    }
+    .main-area ul li ul{
+        
+        top: 100%;
+        left:10%;
+        
+        
+    }
+    
+    .main-area ul li a{
+        
+      
+       
+        
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+    .content h2{
+        font-size: 20px;
+        margin-right: 100px;
+    }
+    .content img{
+        
+        
+        margin-left: 50px;
+        
+     }
+     .content p{
+        
+        width: 300px;
+        
+     }
+     
+    
+    .main-area{
+        height: 750px;
+        width: 330px;
+        
+    }
+}
